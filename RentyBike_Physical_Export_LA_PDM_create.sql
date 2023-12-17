@@ -40,7 +40,7 @@ CREATE TABLE Owner (
 -- Table: Returning
 CREATE TABLE
 Returning (
-        r_ID int NOT NULL,
+        r_ID int NOT NULL AUTO_INCREMENT,
         r_ReturnDate datetime NOT NULL,
         r_isLate boolean NOT NULL,
         r_Penalty decimal(9, 2) NULL,
@@ -50,7 +50,7 @@ Returning (
     );
 -- Table: Ticket
 CREATE TABLE Ticket (
-    t_ID int NOT NULL,
+    t_ID int NOT NULL AUTO_INCREMENT,
     t_RentDate datetime NOT NULL,
     t_ExpReturnDate date NOT NULL,
     t_Total_price decimal(9, 2) NOT NULL,
